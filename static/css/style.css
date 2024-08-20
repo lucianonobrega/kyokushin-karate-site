@@ -1,0 +1,371 @@
+html {
+    font-size: 62.5%;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root {
+    --cor0:#ff0000;
+    --cor1:#000000;
+    --cor2:#ffffff;
+    --cor3:#ffffffbb;
+    --cor4:#c3c3c3;
+    --cor5:#515151;
+    --cor6:#1a1a1a;
+}
+
+body {
+    font-size: 1.6rem;
+    background-image: url("/static/img/body_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 20rem;
+    background-image: url("/static/img/bw_header.png");
+    background-size: contain;
+    background-color: var(--cor3)
+}
+
+body, header {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor2);
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--cor0);
+    transition: 0.7s;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* SECTIONS ESTILO INÍCIO */
+
+.section-kyokushin-karate,
+.section-aulas,
+.section-cadastro,
+.section-nosso-dojo {
+    width: 90%;
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--cor0);
+    margin: 2rem 0;
+}
+
+/* SECTION ESTILO FIM */
+
+/* KYOKUSHIN KARATE INÍCIO */
+
+.div-h1-kyokushin-karate {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--cor1);
+    border-bottom: 2px solid var(--cor0);
+    color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-kyokushin-karate img {
+    width: 100%;
+    height: 40rem;
+    border-bottom: 2px solid var(--cor0);
+}
+
+.div-conteudo-kyokushin-karate {
+    width: 100%;
+    padding: 2rem 12rem 0 12rem;
+}
+
+.div-conteudo-kyokushin-karate img {
+    width: 30%;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.div-conteudo-kyokushin-karate p {
+    margin-bottom: 2rem;
+}
+
+.div-conteudo-kyokushin-karate ul {
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+}
+
+/* KYOKUSHIN KARATE FIM */
+
+/* AULAS INÍCIO */
+
+.div-h1-aulas {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--cor1);
+    border-bottom: 2px solid var(--cor0);
+    color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-aulas img {
+    width: 100%;
+    height: 40rem;
+    border-bottom: 2px solid var(--cor0);
+}
+
+.div-conteudo-aulas {
+    padding: 2rem 12rem 0 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-conteudo-aulas h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.div-conteudo-aulas table {
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+}
+
+.div-conteudo-aulas table,th,td {
+    border: 1px solid var(--cor0);
+    color: var(--cor2);
+    background-color: var(--cor1);
+    padding: 1rem;
+}
+
+.div-conteudo-aulas-professores {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor1);
+    margin: 4rem 0;
+    border: 2px solid var(--cor0);
+    color: var(--cor2);
+    padding: 2rem 0;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.div-conteudo-aulas-professores img {
+    width: 100%;
+    border: 2px solid var(--cor0);
+    margin-bottom: 1rem;
+}
+
+.div-conteudo-aulas-professores div p {
+    text-align: center;
+}
+
+/* AULAS FIM */
+
+/* CADASTRO INÍCIO */
+
+.section-cadastro {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-cadastro-conteudo {
+    width: 50%;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.div-cadastro-conteudo img {
+    width: 70%;
+}
+
+.div-form-container {
+    width: 40%;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0rem 1.5rem var(--cor1);
+}
+
+.div-form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--cor1);
+}
+
+.div-form-container label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--cor1);
+}
+
+.div-form-container input,
+.div-form-container select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 0.1rem solid var(--cor4);
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    color: var(--cor5);
+}
+
+.div-form-container button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--cor1);
+    border: none;
+    border-radius: 0.4rem;
+    color: var(--cor2);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.div-form-container button:hover {
+    background-color: var(--cor0);
+    transition: 0.7s;
+}
+
+/*CADASTRO FIM */
+
+/* NOSSO DOJO INÍCIO */
+
+.div-h1-nosso-dojo {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--cor1);
+    border-bottom: 2px solid var(--cor0);
+    color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-nosso-dojo > img {
+    width: 100%;
+    height: 40rem;
+    border-bottom: 2px solid var(--cor0);
+}
+
+.div-conteudo-nosso-dojo {
+    padding: 4rem 12rem;
+}
+
+.div-imagens-nosso-dojo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4rem 0;
+}
+
+.div-imagens-nosso-dojo img {
+    width: 40%;
+    border: 2px solid var(--cor0);
+}
+
+
+/* NOSSO DOJO FIM */
+footer {
+    width: 100%;
+    height: 20rem;
+    background-color: var(--cor6);
+    color: var(--cor2);
+}
+
+.div-footer-container {
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 1.5rem;
+}
+
+.div-contato {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.div-redes-sociais {
+    width: 10%;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.div-redes-sociais i:hover {
+    color: var(--cor0);
+    transition: 0.7s;
+}
+
+.div-copy {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}

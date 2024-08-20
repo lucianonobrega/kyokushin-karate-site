@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Wolves</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/bw_logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('kyokushin_karate') }}">Kyokushin Karate</a></li>
+            <li><a href="{{ url_for('nosso_dojo') }}">Nosso Dojo</a></li>
+            <li><a href="{{ url_for('aulas') }}">Aulas</a></li>
+            <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+            <li><a href="#id-contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block conteudo %}
+        <section id="id-kyokushin-karate" class="section-kyokushin-karate">
+            <div id="id-h1-kyokushin-karate" class="div-h1-kyokushin-karate">
+                <h1>Kyokushin Karate</h1>
+            </div>
+            <img src="{{ url_for('static', filename='img/kyokushin-karate-img.jpg') }}" alt="Kyokushin-Ilustração">
+            <div id="id-conteudo-kyokushin-karate" class="div-conteudo-kyokushin-karate">
+                <h2>O que é Kyokushin Karate</h2>
+                <p>O Karate Kyokushin foi criado no Japão, em 1957, pelo Grão Mestre Masutatsu Oyama. Na opinião dele, os golpes deveriam ser reais, pois só assim cada praticante saberia seu verdadeiro potencial. Oyama criou, então, uma nova forma de luta, acrescentando o contato no Karate. O novo estilo foi batizado de “KYOKUSHIN”, que significa “aprofundar-se na verdade” e, hoje, é praticado em mais de 100 países ao redor do mundo.</p>
+                <p>É um estilo de karate dinâmico, baseado nos princípios do “bushido” (caminho do guerreiro), priorizando conceitos ancestrais como ser rigoroso consigo mesmo, ser compreensivo com seus semelhantes, venerar seus pais e ser fiel à pátria.</p>
+                <p>As técnicas do estilo refletem sua proposta; os treinos são duros e ostensivos, e a prática de luta pretende ser fluida. Alguns praticantes notáveis (famosos) são: Sean Connery, Dolph Lundgren, Michael Jai White, Georges St-Pierre, Sonny Chiba.</p>
+                <p>O Karate Kyokushin foi trazido ao Brasil em 1972, pelo mestre Seiji Isobe, hoje 8º Dan e chefe da Organização Sul-americana do estilo. Shihan Isobe tornou-se mundialmente conhecido no meio das artes marciais ao formar os dois primeiros estrangeiros campeões mundiais de Kyokushin: os brasileiros Francisco Filho (1999) e Ewerton Teixeira (2007).</p>
+                <br>
+                <h2>Benefícios</h2>
+                <p>Os benefícios advindos da prática do Karate Kyokushin subdividem-se em três principais aspectos:</p>
+                <h3>Educacional</h3>
+                <p>O Karate Kyokushin Oyama tem como um de seus principais objetivos a construção do caráter de seu praticante, sobressaltando a humildade e integridade moral, ética e de personalidade de seus adeptos, além da não-discriminação de raça, credo, idade, sexo e condição social.</p>
+                <p>As academias não são apenas um lugar para a prática esportiva. São, principalmente, uma escola onde se procura complementar a educação das crianças e fortalecer o caráter dos adultos, por meio da disciplina, do respeito, da cortesia e das demonstrações de conduta moral.</p>
+                <h3>Esporte</h3>
+                <p>Como prática esportiva, o Karate Kyokushin não tem restrição à idade ou sexo, pois seus exercícios são condicionados à capacidade individual de cada praticante, sempre objetivando um maior desenvolvimento físico. Além disso, o Karate Kyokushin movimenta toda a estrutura muscular do corpo humano; sendo assim considerado uma modalidade esportiva completa:</p>
+                <ul>
+                    <li>Combate o estresse.</li>
+                    <li>Auxilia no sistema cardiorrespiratório.</li>
+                    <li>Melhora a coordenação motora e a elasticidade por meio de exercícios de alongamento.</li>
+                    <li>Elimina as toxinas e reduz o excesso de peso.</li>
+                    <li>Desenvolve e melhora a concentração, o raciocínio, a observação e percepção sensorial.</li>
+                    <li>Aumenta a autoestima e autoconfiança.</li>
+                    <li>Torna o organismo mais resistente e saudável.</li>
+                </ul>
+                <h3>Defesa pessoal</h3>
+                <p>Além dos benefícios nos aspectos educacionais e esportivo, o Karate Kyokushin Oyama demonstra ser também uma eficiente forma de defesa pessoal, só utilizada em casos de extrema necessidade, pois seus adeptos adquirem grande autoconfiança e percepção de conduta, o que normalmente os afasta da necessidade de utilizar seus conhecimentos da arte marcial.</p>
+                <h2>Faixas no Karate Kyokushin</h2>
+                <p>No Karate Kyokushin, as faixas representam o progresso e a dedicação de cada praticante. Cada cor simboliza um estágio no caminho do karateka, refletindo o desenvolvimento das habilidades, disciplina e conhecimento.</p>
+                <h3>Exames de Faixa</h3>
+                <p>A jornada para conquistar uma nova faixa é desafiadora e exige preparação rigorosa. Os exames de graduação testam não apenas as técnicas aprendidas, mas também a força mental, a resistência física e o espírito do karateka. Cada exame é uma oportunidade de demonstrar o crescimento e o comprometimento com os princípios do Kyokushin.Os exames de faixa são realizados a cada quatro meses, obedecendo à seguinte ordem de graduação:</p>
+                <ul>
+                    <li>Branca (10º kyu)</li>
+                    <li>Laranja (9º kyu)</li>
+                    <li>Azul (8º ou 7º kyu)</li>
+                    <li>Amarela (6º ou 5º kyu)</li>
+                    <li>Verde (4º ou 3º kyu)</li>
+                    <li>Marrom (2º ou 1º kyu)</li>
+                </ul>
+                <p>O exame de faixa preta é anual, sendo o modelo brasileiro um dos mais exigentes do mundo.</p>
+                <ul>
+                    <li>Preta (de 1º a 10º dan)</li>
+                </ul>
+                <p>Para todas as graduações, são exigidos conhecimentos teóricos (prova escrita) e técnicos (testes de força e luta). São considerados também o comportamento e a freqüência nas aulas.</p>
+                <img src="{{ url_for('static',filename='img/graduacao.gif') }}" alt="faixas-karate-kyokushin">
+            </div>
+        </section>
+        {% endblock %}
+    </main>
+    <footer>
+        <div id="id-footer-container" class="div-footer-container">
+            <div id="id-contato" class="div-contato">
+                <p><b>Endereço</b>: Rua fictícia, número 2</p>
+                <p><b>Telefone</b>: (xx) 99999-9999</p>
+                <p><b>Email</b>: ficticio@gmail.com</p>
+            </div>
+            <div id="id-redes-sociais" class="div-redes-sociais">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+        </div>
+        <div id="id-copy" class="div-copy">
+            <p>&copy; 2024 Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

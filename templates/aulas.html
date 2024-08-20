@@ -1,0 +1,54 @@
+{% extends "kyokushin_karate.html" %}
+{% block conteudo %}
+    <section id="id-aulas" class="section-aulas">
+            <div id="id-h1-aulas" class="div-h1-aulas">
+                <h1>Aulas</h1>
+            </div>
+            <img src="{{ url_for('static', filename='img/aulas-img.jpg') }}" alt="Kyokushin-Aula-Ilustração">
+            <div id="id-conteudo-aulas" class="div-conteudo-aulas">
+                <h2>Kyokushin Karate</h2>
+                <table>
+                    <tr>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                    <tr>
+                        <td>9h às 10h30</td>
+                        <td>-</td>
+                        <td>9h às 10h30</td>
+                        <td>Kids 12h às 12h50</td>
+                        <td>10h às 11h30</td>
+                    </tr>
+                    <tr>
+                        <td>Kids 18h às 18h55</td>
+                        <td>15h30 às 16h50</td>
+                        <td>Kids 18h às 18h50</td>
+                        <td>15h30 às 16h50</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>20h às 21h30 Técnicas de Idogueiko e Kata</td>
+                        <td>19h às 19h55</td>
+                        <td>20h às 21h30</td>
+                        <td>19h às 19h55</td>
+                        <td>20h às 21h30 Técnicas de Kumite</td>
+                    </tr>
+                </table>
+                <div id="id-conteudo-aulas-professores" class="div-conteudo-aulas-professores">
+                    <div class="div-conteudo-aulas-professores-sensei-Doppo">
+                        <h2>Sensei Doppo</h2>
+                        <img src="{{ url_for('static', filename='img/sensei_doppo.png') }}" alt="Sensei Doppo">
+                        <p><b>Faixa preta 6° Dan</b></p>
+                    </div>
+                    <div class="div-conteudo-aulas-professores-sensei-Katsumi">
+                        <h2>Sensei Katsumi</h2>
+                        <img src="{{ url_for('static', filename='img/sensei_katsumi.png') }}" alt="Sensei Katsumi">
+                        <p><b>Faixa preta 4° Dan</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}

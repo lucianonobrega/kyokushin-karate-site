@@ -1,0 +1,21 @@
+{% extends "kyokushin_karate.html" %}
+{% block conteudo %}
+          <section id="id-nosso-dojo" class="section-nosso-dojo">
+              <div id="id-h1-nosso-dojo" class="div-h1-nosso-dojo">
+                  <h1>Nosso Dojo</h1>
+              </div>
+              <img src="{{ url_for('static', filename='img/nosso-dojo-img.jpg') }}" alt="Imagem Nosso Dojo">
+              <div id="id-conteudo-nosso-dojo" class="div-conteudo-nosso-dojo">
+                  <p>
+                      O dojo Black Wolves é um espaço moderno e acolhedor, com 300m² dedicados exclusivamente ao treinamento de Karate Kyokushin. Com uma atmosfera que combina disciplina e energia, o dojo oferece um ambiente ideal para o desenvolvimento físico e mental dos praticantes.</p>
+                      <p>Equipado com tatames de alta qualidade, o espaço garante conforto e segurança durante os treinos. Além disso, o dojo conta com sacos de pancada, escudos de chute e equipamento de proteção completo para simulações de combate, permitindo um treino intensivo e realista.</p>
+                      <p>As paredes são decoradas com símbolos tradicionais do Karate Kyokushin e imagens inspiradoras, criando uma conexão com a essência da arte marcial. A iluminação é cuidadosamente projetada para proporcionar um ambiente claro e focado, enquanto o sistema de ventilação garante uma temperatura agradável durante os treinos mais intensos.</p>
+                      <p>O Black Wolves também oferece vestiários espaçosos e limpos, com armários individuais e chuveiros, proporcionando comodidade aos alunos. Com um ambiente motivador e completo, o dojo é o lugar perfeito para quem deseja se dedicar ao verdadeiro espírito do Karate Kyokushin.</p>
+              </div>
+              <h2>Imagens do Dojo</h2>
+              <div id="id-imagens-nosso-dojo" class="div-imagens-nosso-dojo">
+                  <img src="{{ url_for('static', filename='img/body_background.jpg') }}" alt="Imagem-Dojo">
+                  <img src="{{ url_for('static', filename='img/dojo-image-2.jpg') }}" alt="Imagem-Dojo">
+              </div>
+          </section>
+{% endblock %}
